@@ -1,0 +1,5 @@
+    終端機
+npm create vuetify@latest
+輸入 pomodoro > custom > no > yes > yes > yes > npm
+npm i -D @vue/eslint-config-standard
+在 eslint 設定檔輸入 '@vue/standard'
