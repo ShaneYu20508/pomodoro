@@ -2,7 +2,7 @@
   <v-container>
     <v-row>
       <v-col cols="12">
-        <h1 class="text-center">事項</h1>
+        <h1 class="text text-center">事項</h1>
       </v-col>
       <v-col cols="12">
         <v-text-field
@@ -77,7 +77,7 @@
         </v-table>
       </v-col>
       <v-col cols="12">
-        <h1 class="text-center">已完成事項</h1>
+        <h1 class="text text-center">已完成事項</h1>
       </v-col>
       <v-col col="12">
         <v-table>
@@ -108,6 +108,13 @@
     </v-row>
   </v-container>
 </template>
+
+<style scoped>
+.text{
+  color: rgb(246, 255, 0);
+  -webkit-text-stroke: 1px black;
+}
+</style>
 
 <script setup>
 import { ref } from 'vue'

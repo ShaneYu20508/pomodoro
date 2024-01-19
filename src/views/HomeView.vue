@@ -1,6 +1,6 @@
 <template>
-  <v-container>
-    <v-row>
+  <v-container class="container">
+    <v-row class="box">
       <v-col cols="12">
         <h1>{{ currentText }}</h1>
         <h1>{{ currentTime }}</h1>
@@ -13,6 +13,30 @@
     </v-row>
   </v-container>
 </template>
+
+<style scoped>
+.container{
+  width: 100vw;
+  height: 80vh;
+  position: relative;
+}
+
+.box{
+  width: 500px;
+  height: 300px;
+  border: 10px solid rgb(255, 0, 0);
+  border-radius: 50px 0px 50px 0px ;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  background-image: url('../assets/animal.jpg');
+  color:rgb(255, 115, 0);
+  background-size: cover;
+  align-items: center;
+  text-align: center;
+}
+</style>
 
 <script setup>
 import { useListStore } from '@/store/list'
